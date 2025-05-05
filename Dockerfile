@@ -12,7 +12,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 # Copy SSL certificates
 COPY eyeseeu_tld.key /etc/ssl/private/eyeseeu_tld.key
-COPY fullchain.crt /etc/ssl/certs/fullchain.crt
+COPY fullchain.crt /etc/ssl/certs/fullchain.pem
 
 # Expose HTTP (80) and HTTPS (443) ports
 EXPOSE 80
